@@ -25,7 +25,6 @@
     height: auto;
 }
 
-
 /* Boton proyectos */
 .custom-btn {
     width: 130px;
@@ -105,8 +104,14 @@
     border-radius: 50px;
 }
 
-.sobre-mi h2 {
+.sobre-mi-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-mi h1 {
     font-family: "Unbounded", sans-serif;
+    font-weight: normal;
     color: #6B37CE;
 }
 
@@ -303,21 +308,19 @@
 /* SERVICIOS */
 
 #s-branding {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
-    gap: 60px;
-    max-width: 1100px;
+    gap: 100px;
+    max-width: 70%;
     margin: 80px auto;
     padding: 0 20px;
 }
 
 #s-branding img {
-    max-width: 500px;
+    max-width: 1000px;
     width: 100%;
     height: auto;
     border-radius: 30px;
-    object-fit: cover;
 }
 
 #s-branding h2 {
@@ -327,22 +330,19 @@
 }
 
 #s-redes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
-    gap: 60px;
-    max-width: 1100px;
+    gap: 100px;
+    max-width: 70%;
     margin: 80px auto;
     padding: 0 20px;
 }
 
 #s-redes img {
-    max-width: 500px;
+    max-width: 1000px;
     width: 100%;
     height: auto;
     border-radius: 30px;
-    object-fit: cover;
-    z-index: 999;
 }
 
 #s-redes h2 {
@@ -352,21 +352,19 @@
 }
 
 #s-ilus {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
-    gap: 60px;
-    max-width: 1100px;
+    gap: 100px;
+    max-width: 70%;
     margin: 80px auto;
     padding: 0 20px;
 }
 
 #s-ilus img {
-    max-width: 500px;
+    max-width: 1000px;
     width: 100%;
     height: auto;
     border-radius: 30px;
-    object-fit: cover;
 }
 
 #s-ilus h2 {
@@ -376,21 +374,19 @@
 }
 
 #s-foto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
-    gap: 60px;
-    max-width: 1100px;
+    gap: 100px;
+    max-width: 70%;
     margin: 80px auto;
     padding: 0 20px;
 }
 
 #s-foto img {
-    max-width: 500px;
+    max-width: 1000px;
     width: 100%;
     height: auto;
     border-radius: 30px;
-    object-fit: cover;
 }
 
 #s-foto h2 {
@@ -587,10 +583,11 @@
 }
 
 /* SERVICIOS */
+
 /* BRANDING */
 @media (max-width: 768px) {
     #s-branding {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 30px;
         text-align: center;
     }
@@ -618,7 +615,7 @@
 /* REDES SOCIALES */
 @media (max-width: 768px) {
     #s-redes {
-        grid-template-columns: 1fr;
+        flex-direction: column-reverse;
         gap: 30px;
         text-align: center;
     }
@@ -626,14 +623,12 @@
     #s-redes img {
         max-width: 300px;
         margin: 0 auto;
-        order: 1 !important;
     }
 
     #s-redes p {
         max-width: 100%;
         font-size: 15px;
         text-align: left;
-        order: 2 !important;
     }
 
     #s-redes h2 {
@@ -648,7 +643,7 @@
 /* ILUSTRACION */
 @media (max-width: 768px) {
     #s-ilus {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 30px;
         text-align: center;
     }
@@ -676,7 +671,7 @@
 /* FOTOGRAFIA */
 @media (max-width: 768px) {
     #s-foto {
-        grid-template-columns: 1fr;
+        flex-direction: column-reverse;
         gap: 30px;
         text-align: center;
     }
@@ -684,14 +679,12 @@
     #s-foto img {
         max-width: 300px;
         margin: 0 auto;
-        order: 1 !important;
     }
 
     #s-foto p {
         max-width: 100%;
         font-size: 15px;
         text-align: left;
-        order: 2 !important;
     }
 
     #s-foto h2 {
