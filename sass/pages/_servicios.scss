@@ -1,0 +1,35 @@
+@use "../generales/variables" as*;
+
+.s-branding {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    max-width: 70%;
+    margin: 80px auto;
+    padding: 0 20px;
+
+    img {
+        max-width: 1000px;
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    h2 {
+        font-size: 32px;
+        color: $primary-color;
+        margin-bottom: 20px;
+    }
+}
+
+.s-redes {
+    @extend .s-branding;
+}
+
+.s-ilus {
+    @extend .s-branding;
+}
+
+.s-foto {
+    @extend .s-branding;
+}

@@ -1,0 +1,22 @@
+@use "../generales/variables" as*;
+
+.galeria {
+    padding: 40px;
+
+    .grid-galeria {
+        columns: 3;
+        column-gap: 20px;
+    }
+
+    .grid-galeria img {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .grid-galeria img:hover {
+        transform: scale(1.03);
+    }
+}

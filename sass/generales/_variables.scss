@@ -1,0 +1,11 @@
+$font-principal: "Montserrat", sans-serif;
+$font-secundaria: "Unbounded", sans-serif;
+$general-color: #33383b;
+$primary-color: #6B37CE;
+$secondary-color: #4FC082;
+
+body {
+    font: 100% $font-principal;
+    color: $general-color;
+    margin: 0;
+}

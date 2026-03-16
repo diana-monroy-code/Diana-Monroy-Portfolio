@@ -21,15 +21,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
 
-    <!-- Hoja de estiloa -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!--  ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="./index.html">
                     <img src="./img/logo_dm.png" alt="Bootstrap" width="40" height="40">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
@@ -38,11 +41,11 @@
                 </button>
                 <div id="mainNav" class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="pages/sobre-mi.html">Sobre
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="./pages/sobre-mi.html">Sobre
                                 mí</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="pages/proyectos.html">Proyectos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/proyectos.html">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/servicios.html">Servicios</a></li>
                     </ul>
                 </div>
             </div>
@@ -50,39 +53,48 @@
     </header>
 
     <main>
-        <div>
-            <img class="banner_principal" src="img/banner_nombre.jpg" class="img-fluid" alt="">
-        </div>
+        <section class="banner">
+            <div class="banner_principal">
+                <img src="img/banner_nombre.jpg" class="img-fluid" alt="">
+            </div>
 
-        <p class="frase">
-            <span class="destacado">Diseñar</span> es entender, emocionar y crear un impacto que perdure
-        </p>
+            <p class="frase animate__animated animate__fadeInDown">
+                <span class="destacado">Diseñar</span> es entender,
+                emocionar y
+                crear un impacto que
+                perdure
+            </p>
+        </section>
 
-        <div class="proyectos">
+        <!-- GALERIA -->
+        <div class="proyectos animate__animated animate__fadeIn animate__delay-1s">
             <img src="img/casa_macario.jpg" alt="">
             <img src="img/sitio_1.jpg" alt="">
             <img src="img/sitio_2.jpg" alt="">
             <img src="img/propuesta.jpg" alt="">
         </div>
 
+
+        <!-- BOTON -->
         <div class="boton-home">
-            <button class="custom-btn btn-15">Ver más</button>
+            <button class="custom-btn btn-15">
+                <a href="./pages/proyectos.html">Ver más</a>
+            </button>
         </div>
 
         <div class="sobre-mi">
             <img src="img/foto_diana.jpg" alt="Diana-Monroy">
             <div class="sobre-mi-texto">
                 <h1>Diseñadora web</h1>
-                <p>Lorem Ipsumes simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
-                    sido
-                    el texto de relleno estándar de las industrias desde el año. Lorem Ipsumes simplemente el texto de
-                    relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
-                    las
-                    industrias desde el año</p>
+                <p>Diseñadora especializada en diseño web y UX/UI. Me apasiona transformar ideas en experiencias
+                    digitales claras, funcionales y atractivas. A lo largo de mi trayectoria he trabajado en agencia,
+                    empresas y proyectos independientes diseñando sitios web, apps y soluciones digitales para marcas de
+                    diferentes industrias.</p>
             </div>
         </div>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer-distributed">
 
         <div class="footer-left">
