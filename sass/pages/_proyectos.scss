@@ -16,7 +16,7 @@
         transition: 0.3s;
     }
 
-    .grid-galeria img:hover {
+    &:hover img {
         transform: scale(1.03);
     }
 }

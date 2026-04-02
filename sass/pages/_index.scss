@@ -83,7 +83,7 @@
         z-index: 1;
     }
 
-    .btn-15:after {
+    &::after {
         position: absolute;
         width: 0;
         height: 100%;
@@ -98,16 +98,16 @@
         transition: all 0.3s ease;
     }
 
-    .btn-15:hover {
+    &:hover {
         color: #fff;
     }
 
-    .btn-15:hover:after {
+    &:hover::after {
         left: 0;
         width: 100%;
     }
 
-    .btn-15:active {
+    &:active {
         top: 2px;
     }
 }

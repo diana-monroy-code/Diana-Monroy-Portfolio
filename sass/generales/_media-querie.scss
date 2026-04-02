@@ -58,8 +58,9 @@
     }
 }
 
+// SERVICIOS 
 /* BRANDING */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .s-branding {
         flex-direction: column;
         gap: 30px;
@@ -86,7 +87,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .s-redes {
         flex-direction: column-reverse;
         gap: 30px;
@@ -113,7 +114,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .s-ilus {
         flex-direction: column;
         gap: 30px;
@@ -141,7 +142,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .s-foto {
         flex-direction: column-reverse;
         gap: 30px;
@@ -170,7 +171,7 @@
 
 
 /* PROYECTOS */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
 
     .galeria .grid-galeria {
         columns: 2;
